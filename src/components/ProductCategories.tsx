@@ -1,24 +1,33 @@
 import Link from "next/link";
+import { Sun, Cable, Zap, Grip, Cpu } from "lucide-react";
 
-const items = [
+const categories = [
   {
-    name: "Solar Panel Mounting Structures",
-    desc: "Mid clamps, end clamps, spring nuts, base plates & more",
+    name: "Solar Mounting Structures",
+    desc: "Mid clamps, end clamps, spring nuts, base plates, channel nuts & more",
+    icon: Sun,
+    href: "/products",
     img: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80",
   },
   {
     name: "Cable Trays",
     desc: "GI, MS, SS, Perforated, Ladder type & G.P cable trays",
+    icon: Cable,
+    href: "/products",
     img: "https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=600&q=80",
   },
   {
-    name: "Earthing & Lightning Protection",
-    desc: "Copper rods, earthing electrodes, lightning arresters",
+    name: "Earthing & Lightning",
+    desc: "Copper rods, earthing electrodes, lightning arresters & masts",
+    icon: Zap,
+    href: "/earthing",
     img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80",
   },
   {
-    name: "Anchors & Fasteners",
-    desc: "Anchor fasteners M8 & M10 for industrial use",
+    name: "Anchors & Transformers",
+    desc: "Anchor fasteners M8/M10 & three phase distribution transformers",
+    icon: Grip,
+    href: "/products",
     img: "https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=600&q=80",
   },
 ];
@@ -44,24 +53,27 @@ export default function ProductCategories() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {items.map((item, i) => (
+          {categories.map((cat, i) => (
             <Link
               key={i}
-              href={item.name.toLowerCase().includes("earthing") ? "/earthing" : "/products"}
+              href={cat.href}
               className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src={item.img}
-                  alt={item.name}
+                  src={cat.img}
+                  alt={cat.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-5">
-                <h3 className="font-bold text-gray-900 group-hover:text-solar transition-colors">
-                  {item.name}
-                </h3>
-                <p className="text-sm text-gray-500 mt-2">{item.desc}</p>
+                <div className="flex items-center gap-2 mb-2">
+                  <cat.icon className="w-5 h-5 text-solar" />
+                  <h3 className="font-bold text-gray-900 group-hover:text-solar transition-colors">
+                    {cat.name}
+                  </h3>
+                </div>
+                <p className="text-sm text-gray-500">{cat.desc}</p>
               </div>
             </Link>
           ))}
