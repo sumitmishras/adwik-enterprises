@@ -21,7 +21,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2">
             <Sun className="w-8 h-8 text-solar" />
             <span className="text-xl font-bold text-gray-900">
-              Adwik <span className="text-solar">Enterprises</span>
+              Aadwik <span className="text-solar">Enterprises</span>
             </span>
           </Link>
 

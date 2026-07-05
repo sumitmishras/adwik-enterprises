@@ -20,7 +20,7 @@ export default function CTABanner() {
         </h2>
         <p className="text-white/80 max-w-3xl mx-auto mb-8 text-sm lg:text-base">
           Power your solar projects with high-quality mounting structures and
-          accessories from Adwik Enterprises. Contact us today for reliable,
+          accessories from Aadwik Enterprises. Contact us today for reliable,
           durable, and affordable solar solutions!
         </p>
         <div className="flex flex-wrap justify-center gap-4">

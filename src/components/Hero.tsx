@@ -58,7 +58,7 @@ export default function Hero() {
             <div className="flex items-center gap-2 mb-6">
               <div className="h-px w-12 bg-solar" />
               <span className="text-solar text-sm font-medium tracking-widest uppercase">
-                Welcome to Adwik Enterprises
+                Welcome to Aadwik Enterprises
               </span>
             </div>
 

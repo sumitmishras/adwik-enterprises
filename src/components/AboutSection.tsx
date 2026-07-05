@@ -35,7 +35,7 @@ export default function AboutSection() {
             </h2>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Adwik Enterprises is a trusted trader and retailer of solar panel mounting
+              Aadwik Enterprises is a trusted trader and retailer of solar panel mounting
               structures, cable trays, earthing solutions, and industrial products based
               in Ludhiana, Punjab. We supply high-quality products for projects of all sizes.
             </p>

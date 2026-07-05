@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Adwik Enterprises - Solar Panel Mounting Structure Manufacturer",
+  title: "Aadwik Enterprises - Solar Panel Mounting Structure Manufacturer",
   description: "Leading manufacturer of solar panel mounting structures and accessories in India.",
 };
 

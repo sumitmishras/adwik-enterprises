@@ -64,7 +64,7 @@ export default function BlogPage() {
             <span className="text-white">Blog</span>
           </div>
           <h1 className="text-3xl lg:text-5xl font-bold">Our Blog</h1>
-          <p className="text-gray-400 mt-2">Latest news, guides, and updates from Adwik Enterprises</p>
+          <p className="text-gray-400 mt-2">Latest news, guides, and updates from Aadwik Enterprises</p>
         </div>
       </section>
 

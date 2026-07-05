@@ -40,7 +40,7 @@ export default function WhyUs() {
             <div className="h-px w-8 bg-solar" />
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-            Why Work With Adwik Enterprises
+            Why Work With Aadwik Enterprises
           </h2>
         </div>
 

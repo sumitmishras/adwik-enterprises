@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <Sun className="w-8 h-8 text-solar" />
               <span className="text-xl font-bold text-white">
-                Adwik <span className="text-solar">Enterprises</span>
+                Aadwik <span className="text-solar">Enterprises</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
@@ -144,7 +144,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-500">
-              &copy; 2026 Adwik Enterprises. All Rights Reserved.
+              &copy; 2026 Aadwik Enterprises. All Rights Reserved.
             </p>
           </div>
         </div>

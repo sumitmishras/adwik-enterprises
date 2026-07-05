@@ -12,7 +12,7 @@ export default function AboutPage() {
             <ChevronRight className="w-3 h-3" />
             <span className="text-white">About Us</span>
           </div>
-          <h1 className="text-3xl lg:text-5xl font-bold">About Adwik Enterprises</h1>
+          <h1 className="text-3xl lg:text-5xl font-bold">About Aadwik Enterprises</h1>
           <p className="text-gray-400 mt-2">Know more about our company and our mission</p>
         </div>
       </section>
@@ -26,7 +26,7 @@ export default function AboutPage() {
                 Who <span className="text-solar">We Are</span>
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Adwik Enterprises is a trusted manufacturer of solar panel mounting
+                Aadwik Enterprises is a trusted manufacturer of solar panel mounting
                 structures and accessories based in Ludhiana, Punjab, India.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -42,7 +42,7 @@ export default function AboutPage() {
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img
                 src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800&q=80"
-                alt="About Adwik Enterprises"
+                alt="About Aadwik Enterprises"
                 className="w-full h-[400px] object-cover"
               />
             </div>
