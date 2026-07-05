@@ -2,58 +2,19 @@ import Link from "next/link";
 import { ChevronRight, Zap } from "lucide-react";
 
 const earthingProducts = [
-  {
-    name: "Copper Solar Lightning Arrester",
-    desc: "High-quality copper lightning arrester for solar installations",
-  },
-  {
-    name: "Lightning Arresters Mast",
-    desc: "Durable lightning arrester mast for effective protection",
-  },
-  {
-    name: "Solid Copper Earth Rods",
-    desc: "Solid copper earth rods for reliable grounding",
-  },
-  {
-    name: "Copper Earthing Electrodes",
-    desc: "Premium copper earthing electrodes for safe grounding",
-  },
-  {
-    name: "Gi Earthing Electrode / Pipe",
-    desc: "GI earthing electrode pipe for cost-effective earthing",
-  },
-  {
-    name: "Copper Bonded Earth Electrode 50mm - 80mm",
-    desc: "Copper bonded earth electrode in 50mm to 80mm sizes",
-  },
-  {
-    name: "Gi Pipe Earthing Electrode",
-    desc: "GI pipe earthing electrode for industrial grounding",
-  },
-  {
-    name: "Copper Chemical Earthing Electrode",
-    desc: "Chemical earthing electrode with copper for enhanced conductivity",
-  },
-  {
-    name: "GI Strip Pipe Earthing Electrode",
-    desc: "GI strip pipe earthing electrode for reliable earthing",
-  },
-  {
-    name: "Chemical Earthing Electrode",
-    desc: "Advanced chemical earthing electrode solution",
-  },
-  {
-    name: "Copper Bonded Rods",
-    desc: "Copper bonded rods for effective grounding systems",
-  },
-  {
-    name: "Earthing Rod",
-    desc: "Standard earthing rod for general grounding needs",
-  },
-  {
-    name: "Gi Earthing Strip",
-    desc: "GI earthing strip for grounding connections",
-  },
+  { name: "Copper Solar Lightning Arrester", img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" },
+  { name: "Lightning Arresters Mast", img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" },
+  { name: "Solid Copper Earth Rods", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
+  { name: "Copper Earthing Electrodes", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
+  { name: "Gi Earthing Electrode / Pipe", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/434821776/RT/YT/YB/224216350/gi-earthing-pipe-500x500.jpg" },
+  { name: "Copper Bonded Earth Electrode 50mm - 80mm", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
+  { name: "Gi Pipe Earthing Electrode", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/434821776/RT/YT/YB/224216350/gi-earthing-pipe-500x500.jpg" },
+  { name: "Copper Chemical Earthing Electrode", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
+  { name: "GI Strip Pipe Earthing Electrode", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/434821776/RT/YT/YB/224216350/gi-earthing-pipe-500x500.jpg" },
+  { name: "Chemical Earthing Electrode", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
+  { name: "Copper Bonded Rods", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
+  { name: "Earthing Rod", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/434821776/RT/YT/YB/224216350/gi-earthing-pipe-500x500.jpg" },
+  { name: "Gi Earthing Strip", img: "https://5.imimg.com/data5/ANDROID/Default/2025/5/509863386/SE/LB/EQ/224216350/product-jpeg-500x500.jpg" },
 ];
 
 export default function EarthingPage() {
@@ -62,9 +23,9 @@ export default function EarthingPage() {
       <section className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-2">
-            <Link href="/" className="hover:text-solar transition-colors">Home</Link>
+            <Link href="/" className="hover:text-solar">Home</Link>
             <ChevronRight className="w-3 h-3" />
-            <Link href="/products" className="hover:text-solar transition-colors">Products</Link>
+            <Link href="/products" className="hover:text-solar">Products</Link>
             <ChevronRight className="w-3 h-3" />
             <span className="text-white">Earthing</span>
           </div>
@@ -79,19 +40,20 @@ export default function EarthingPage() {
             <Zap className="w-7 h-7 text-amber" />
             <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">Earthing Products</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {earthingProducts.map((p, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all group"
-              >
-                <div className="w-14 h-14 rounded-xl bg-amber/10 flex items-center justify-center mb-4 group-hover:bg-amber group-hover:text-white transition-all">
-                  <span className="text-amber text-xl font-bold group-hover:text-white transition-colors">
-                    {p.name.charAt(0)}
-                  </span>
+              <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-all group">
+                <div className="aspect-square overflow-hidden bg-gray-50">
+                  <img
+                    src={p.img}
+                    alt={p.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">{p.name}</h3>
-                <p className="text-sm text-gray-500">{p.desc}</p>
+                <div className="p-3">
+                  <h3 className="font-medium text-gray-900 text-xs leading-snug text-center">{p.name}</h3>
+                </div>
               </div>
             ))}
           </div>
@@ -102,10 +64,7 @@ export default function EarthingPage() {
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-2xl lg:text-3xl font-bold mb-4">Need Earthing Solutions?</h2>
           <p className="text-white/80 mb-6">Get expert advice on the right earthing products for your project</p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-white text-amber/90 px-8 py-3.5 rounded-full font-semibold hover:bg-gray-100 transition-all"
-          >
+          <Link href="/contact" className="inline-flex items-center gap-2 bg-white text-amber/90 px-8 py-3.5 rounded-full font-semibold hover:bg-gray-100 transition-all">
             Contact Us
           </Link>
         </div>
