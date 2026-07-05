@@ -35,37 +35,37 @@ export default function AboutSection() {
             </h2>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Adwik Enterprises is a trusted manufacturer of solar panel mounting structures
-              and accessories based in India. We make strong, durable, and easy-to-install
-              solar structures for projects of all sizes.
+              Adwik Enterprises is a trusted trader and retailer of solar panel mounting
+              structures, cable trays, earthing solutions, and industrial products based
+              in Ludhiana, Punjab. We supply high-quality products for projects of all sizes.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-8">
-              Our goal is to support clean energy with high-quality products that meet
-              industry standards. We deliver reliable solar solutions for a greener future.
+              Our goal is to provide quality products at competitive prices with timely
+              delivery. We serve customers across India with reliable industrial solutions.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
               {[
                 {
                   icon: Shield,
-                  title: "Quality Assured",
-                  desc: "Premium Aluminum T6-6063 materials",
+                  title: "Quality Products",
+                  desc: "Premium industrial products",
                 },
                 {
                   icon: Leaf,
-                  title: "Eco-Friendly",
-                  desc: "Sustainable energy solutions",
+                  title: "Competitive Pricing",
+                  desc: "Best prices in the market",
                 },
                 {
                   icon: Sun,
-                  title: "Innovative Design",
-                  desc: "Durable & efficient structures",
+                  title: "Timely Delivery",
+                  desc: "Fast & reliable shipping",
                 },
                 {
                   icon: Shield,
-                  title: "Trusted Partner",
-                  desc: "500+ happy clients across India",
+                  title: "Trusted Supplier",
+                  desc: "500+ happy customers across India",
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
