@@ -1,12 +1,11 @@
 import Link from "next/link";
-import { ChevronRight, Sun, Cable, Zap, Grip, Cpu } from "lucide-react";
+import { ChevronRight, Sun, Cable, Zap, Grip, Cpu, Wrench } from "lucide-react";
 
 const categories = [
   {
     id: "solar",
     title: "Solar Panel Mounting Structures & Accessories",
     icon: Sun,
-    img: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
     products: [
       { name: "Solar Panel Mounting Mid Clamp", img: "https://5.imimg.com/data5/ANDROID/Default/2025/5/513525679/CD/NY/UV/224216350/fb-img-1748151467707-jpg-500x500.jpg" },
       { name: "Solar Panel Mounting End Clamp", img: "https://5.imimg.com/data5/SELLER/Default/2026/5/605259999/ZF/ZW/NZ/224216350/solar-panel-mounting-end-clamp-500x500.jpg" },
@@ -31,10 +30,22 @@ const categories = [
     ],
   },
   {
+    id: "beam",
+    title: "Beam Clamp & Pipe Clamp",
+    icon: Wrench,
+    products: [
+      { name: "Beam Clamp Europe Design", img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" },
+      { name: "C Type Beam Clamp", img: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80" },
+      { name: "Channel Pipe Clamp", img: "https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=600&q=80" },
+      { name: "Duct Flange Clamp", img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" },
+      { name: "Hose Pipe Clamp White Zinc", img: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80" },
+      { name: "Split Pipe Clamp With Rubber", img: "https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=600&q=80" },
+    ],
+  },
+  {
     id: "cable",
     title: "Cable Trays",
     icon: Cable,
-    img: "https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=800&q=80",
     products: [
       { name: "Galvanized Iron Channels", img: "https://5.imimg.com/data5/SELLER/Default/2024/6/429021118/UO/FG/UF/224216350/steel-cable-tray-500x500.jpg" },
       { name: "Slotted C Channel", img: "https://5.imimg.com/data5/SELLER/Default/2026/5/605286723/DC/AT/BV/224216350/c-channel-500x500.jpg" },
@@ -51,37 +62,33 @@ const categories = [
     id: "earthing",
     title: "Earthing & Lightning Protection",
     icon: Zap,
-    link: "/earthing",
-    img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80",
     products: [
       { name: "Copper Solar Lightning Arrester", img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" },
-      { name: "Lightning Arresters Mast", img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" },
-      { name: "Solid Copper Earth Rods", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
+      { name: "Lightning Arresters Mast", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
+      { name: "Solid Copper Earth Rods", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/434821776/RT/YT/YB/224216350/gi-earthing-pipe-500x500.jpg" },
       { name: "Copper Earthing Electrodes", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
       { name: "Gi Earthing Electrode / Pipe", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/434821776/RT/YT/YB/224216350/gi-earthing-pipe-500x500.jpg" },
-      { name: "Copper Bonded Earth Electrode", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
-      { name: "Gi Pipe Earthing Electrode", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/434821776/RT/YT/YB/224216350/gi-earthing-pipe-500x500.jpg" },
-      { name: "Copper Chemical Earthing Electrode", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
-      { name: "GI Strip Pipe Earthing Electrode", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/434821776/RT/YT/YB/224216350/gi-earthing-pipe-500x500.jpg" },
-      { name: "Chemical Earthing Electrode", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
-      { name: "Copper Bonded Rods", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
-      { name: "Earthing Rod", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/434821776/RT/YT/YB/224216350/gi-earthing-pipe-500x500.jpg" },
+      { name: "Copper Bonded Earth Electrode", img: "https://5.imimg.com/data5/ANDROID/Default/2025/5/509863386/SE/LB/EQ/224216350/product-jpeg-500x500.jpg" },
+      { name: "Gi Pipe Earthing Electrode", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
+      { name: "Copper Chemical Earthing Electrode", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/434821776/RT/YT/YB/224216350/gi-earthing-pipe-500x500.jpg" },
+      { name: "GI Strip Pipe Earthing Electrode", img: "https://5.imimg.com/data5/ANDROID/Default/2025/5/509863386/SE/LB/EQ/224216350/product-jpeg-500x500.jpg" },
+      { name: "Chemical Earthing Electrode", img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" },
+      { name: "Copper Bonded Rods", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/434821776/RT/YT/YB/224216350/gi-earthing-pipe-500x500.jpg" },
+      { name: "Earthing Rod", img: "https://5.imimg.com/data5/SELLER/Default/2024/7/432891348/GG/GZ/BK/224216350/gi-pipe-earthing-electrode-500x500.jpg" },
     ],
   },
   {
     id: "fasteners",
     title: "Anchors & Fasteners",
     icon: Grip,
-    img: "https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=800&q=80",
     products: [
-      { name: "Anchor Fasteners M8 & M10", img: "https://images.unsplash.com/photo-1611365892117-00ac5ef43c90?w=600&q=80" },
+      { name: "Anchor Fasteners M8 & M10", img: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&q=80" },
     ],
   },
   {
     id: "transformers",
     title: "Distribution Transformers",
     icon: Cpu,
-    img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80",
     products: [
       { name: "Three Phase Servo Distribution Transformers", img: "https://5.imimg.com/data5/SELLER/Default/2025/1/480975709/JJ/SV/NS/224216350/three-phase-servo-distribution-transformers-500x500.jpg" },
     ],
@@ -99,7 +106,7 @@ export default function ProductsPage() {
             <span className="text-white">Products</span>
           </div>
           <h1 className="text-3xl lg:text-5xl font-bold">Our Products</h1>
-          <p className="text-gray-400 mt-2">Complete range of solar, cable tray, earthing and industrial products</p>
+          <p className="text-gray-400 mt-2">Complete range of solar, cable tray, earthing, beam clamps and industrial products</p>
         </div>
       </section>
 
@@ -110,13 +117,7 @@ export default function ProductsPage() {
               <div className="w-10 h-10 rounded-xl bg-solar/10 flex items-center justify-center">
                 <cat.icon className="w-5 h-5 text-solar" />
               </div>
-              <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">
-                {cat.link ? (
-                  <Link href={cat.link} className="hover:text-solar transition-colors">
-                    {cat.title} <span className="text-sm font-normal">→</span>
-                  </Link>
-                ) : cat.title}
-              </h2>
+              <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">{cat.title}</h2>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {cat.products.map((p, i) => (

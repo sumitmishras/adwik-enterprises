@@ -20,7 +20,7 @@ const categories = [
     name: "Earthing & Lightning",
     desc: "Copper rods, earthing electrodes, lightning arresters & masts",
     icon: Zap,
-    href: "/earthing",
+    href: "/products",
     img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80",
   },
   {
