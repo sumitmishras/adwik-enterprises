@@ -44,8 +44,8 @@ export default function ContactSection() {
               {
                 icon: Mail,
                 title: "Email Us",
-                info: ["contact@adwikenterprises.com"],
-                href: "mailto:contact@adwikenterprises.com",
+                info: ["contact@aadwikenterprises.com"],
+                href: "mailto:contact@aadwikenterprises.com",
               },
               {
                 icon: MapPin,

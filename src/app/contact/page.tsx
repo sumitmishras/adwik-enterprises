@@ -54,8 +54,8 @@ export default function ContactPage() {
                   {
                     icon: Mail,
                     title: "Email",
-                    lines: ["contact@adwikenterprises.com"],
-                    href: "mailto:contact@adwikenterprises.com",
+                    lines: ["contact@aadwikenterprises.com"],
+                    href: "mailto:contact@aadwikenterprises.com",
                   },
                   {
                     icon: MapPin,
