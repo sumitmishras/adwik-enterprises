@@ -7,11 +7,11 @@ export default function BottomNav() {
         {[
           { icon: Home, label: "Home", href: "/" },
           { icon: Package, label: "Products", href: "/products" },
-          { icon: Phone, label: "Call", href: "tel:+917380130740" },
+          { icon: Phone, label: "Call", href: "tel:+917973203334" },
           {
             icon: MessageCircle,
             label: "Chat",
-            href: "https://wa.me/917380130740",
+            href: "https://wa.me/917973203334",
           },
         ].map((item, i) => (
           <a

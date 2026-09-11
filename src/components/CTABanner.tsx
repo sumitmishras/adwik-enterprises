@@ -16,7 +16,7 @@ export default function CTABanner() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-2xl lg:text-4xl font-bold text-white mb-4">
-          Have Questions? Call Us +91 73801 30740
+          Have Questions? Call Us +91 79732 03334
         </h2>
         <p className="text-white/80 max-w-3xl mx-auto mb-8 text-sm lg:text-base">
           Power your solar projects with high-quality mounting structures and
@@ -25,7 +25,7 @@ export default function CTABanner() {
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            href="tel:+917380130740"
+            href="tel:+917973203334"
             className="inline-flex items-center gap-2 bg-white text-solar-dark px-8 py-3.5 rounded-full font-medium hover:bg-gray-100 transition-all shadow-lg"
           >
             <Phone className="w-5 h-5" />

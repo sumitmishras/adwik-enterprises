@@ -38,8 +38,8 @@ export default function ContactSection() {
               {
                 icon: Phone,
                 title: "Call Us",
-                info: ["+91 73801 30740"],
-                href: "tel:+917380130740",
+                info: ["+91 79732 03334"],
+                href: "tel:+917973203334",
               },
               {
                 icon: Mail,
@@ -51,8 +51,8 @@ export default function ContactSection() {
                 icon: MapPin,
                 title: "Our Address",
                 info: [
-                  "Industrial Area, Near Gill Road",
-                  "Ludhiana - 141003, Punjab, India",
+                  "Street No 3, Kailash Nagar, Sherpur Road",
+                  "Near Cancer Hospital, Ludhiana - 141003, Punjab, India",
                 ],
               },
             ].map((item, i) => (

@@ -48,8 +48,8 @@ export default function ContactPage() {
                   {
                     icon: Phone,
                     title: "Phone",
-                    lines: ["+91 73801 30740"],
-                    href: "tel:+917380130740",
+                    lines: ["+91 79732 03334"],
+                    href: "tel:+917973203334",
                   },
                   {
                     icon: Mail,
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   {
                     icon: MapPin,
                     title: "Address",
-                    lines: ["Industrial Area, Near Gill Road", "Ludhiana - 141003, Punjab, India"],
+                    lines: ["Street No 3, Kailash Nagar, Sherpur Road", "Near Cancer Hospital, Ludhiana - 141003, Punjab, India"],
                   },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4">
@@ -131,7 +131,7 @@ export default function ContactPage() {
         <div className="text-center">
           <MapPin className="w-10 h-10 text-gray-400 mx-auto mb-2" />
           <p className="text-gray-500 font-medium">Map will be integrated here</p>
-          <p className="text-sm text-gray-400">Industrial Area, Near Gill Road, Ludhiana - 141003</p>
+          <p className="text-sm text-gray-400">Street No 3, Kailash Nagar, Sherpur Road, Near Cancer Hospital, Ludhiana - 141003</p>
         </div>
       </section>
     </div>

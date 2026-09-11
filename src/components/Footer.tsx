@@ -1,4 +1,5 @@
-import { Sun, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 function FacebookIcon({ className }: { className?: string }) {
@@ -36,7 +37,13 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Sun className="w-8 h-8 text-solar" />
+              <Image
+                src="/logo.jpeg"
+                alt="Aadwik Enterprises"
+                width={40}
+                height={40}
+                className="w-9 h-9 rounded-full"
+              />
               <span className="text-xl font-bold text-white">
                 Aadwik <span className="text-solar">Enterprises</span>
               </span>
@@ -110,12 +117,12 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-solar mt-0.5 shrink-0" />
                 <a
-                  href="tel:+917380130740"
+                  href="tel:+917973203334"
                   className="text-sm text-gray-400 hover:text-solar transition-colors"
                 >
-                  +91 73801 30740
+                  +91 79732 03334
                   <br />
-                  +91 73801 30740
+                  +91 79732 03334
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -130,9 +137,9 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-solar mt-0.5 shrink-0" />
                 <span className="text-sm text-gray-400">
-                  Industrial Area, Near Gill Road
+                  Street No 3, Kailash Nagar, Sherpur Road
                   <br />
-                  Ludhiana - 141003, Punjab
+                  Near Cancer Hospital, Ludhiana - 141003, Punjab
                 </span>
               </li>
             </ul>

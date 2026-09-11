@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, Phone, Sun } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
@@ -19,7 +20,14 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link href="/" className="flex items-center gap-2">
-            <Sun className="w-8 h-8 text-solar" />
+            <Image
+              src="/logo.jpeg"
+              alt="Aadwik Enterprises"
+              width={40}
+              height={40}
+              className="w-9 h-9 lg:w-10 lg:h-10 rounded-full"
+              priority
+            />
             <span className="text-xl font-bold text-gray-900">
               Aadwik <span className="text-solar">Enterprises</span>
             </span>
@@ -39,11 +47,11 @@ export default function Header() {
 
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+917380130740"
+              href="tel:+917973203334"
               className="flex items-center gap-2 text-sm font-medium text-solar hover:text-solar-dark transition-colors"
             >
               <Phone className="w-4 h-4" />
-              +91 73801 30740
+              +91 79732 03334
             </a>
             <a
               href="/contact"
@@ -77,11 +85,11 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="tel:+917380130740"
+              href="tel:+917973203334"
               className="flex items-center gap-2 py-2 text-sm font-medium text-solar"
             >
               <Phone className="w-4 h-4" />
-              +91 73801 30740
+              +91 79732 03334
             </a>
             <a
               href="/contact"
