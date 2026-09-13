@@ -54,13 +54,21 @@ export default function Footer() {
             </p>
             <div className="flex gap-3 mt-6">
               {[
-                { icon: FacebookIcon, href: "#" },
-                { icon: InstagramIcon, href: "#" },
+                {
+                  icon: FacebookIcon,
+                  href: "https://www.facebook.com/AADWIKENTERPRISES03/",
+                },
+                {
+                  icon: InstagramIcon,
+                  href: "https://www.instagram.com/aadwikenterprises/",
+                },
                 { icon: LinkedinIcon, href: "#" },
               ].map((item, i) => (
                 <a
                   key={i}
                   href={item.href}
+                  target={item.href !== "#" ? "_blank" : undefined}
+                  rel={item.href !== "#" ? "noopener noreferrer" : undefined}
                   className="w-9 h-9 rounded-full bg-gray-800 hover:bg-solar flex items-center justify-center transition-all"
                 >
                   <item.icon className="w-4 h-4 text-gray-400 hover:text-white transition-colors" />
